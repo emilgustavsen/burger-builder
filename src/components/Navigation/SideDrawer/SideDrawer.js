@@ -11,7 +11,7 @@ const sideDrawer = (props) => {
     }
     return (
         <>
-            {/* <Backdrop show={props.open} clicked={props.hide}> */}
+            <Backdrop show={props.open} clicked={props.hide}/> 
                 <div className={attachedStyles.join(' ')} >
                     <div className={styles.Logo}>
                         <Logo />
@@ -20,7 +20,7 @@ const sideDrawer = (props) => {
                         <NavigationItems/>
                     </nav>
                 </div>
-            {/* </Backdrop> */}
+            
         </>
     );
 }
