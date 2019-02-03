@@ -10,12 +10,14 @@
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
+    display: block;
 }
 
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
     color: #40A4C8;
+    text-decoration: underline;
 }
 
 @media (min-width: 500px) {
@@ -23,6 +25,7 @@
         margin: 0px;
         display: flex;
         height: 100%;
+        width: auto;
         align-items: center;
         
     }
