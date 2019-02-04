@@ -7,10 +7,6 @@
     padding: 10px;
     box-sizing: border-box;
 }
-.ContactInformation input {
-    display: block;
-    text-align: center;
-}
 
 @media (min-width: 600px) {
     .ContactInformation {
