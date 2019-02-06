@@ -65,6 +65,7 @@ class BurgerBuilder extends Component {
         <>
           <Burger ingredients={this.props.ingredients} />
           <BuildControls
+            auth={this.props.isAuthenticated}
             ingredientAdded={this.props.addIngredient}
             ingredientRemoved={this.props.removeIngredient}
             disabled={disabledInfo}
@@ -102,7 +103,8 @@ const mapStateToProps = state => {
   return {
     ingredients: state.burgerBuilder.ingredients,
     price: state.burgerBuilder.price,
-    error: state.burgerBuilder.error
+    error: state.burgerBuilder.error,
+    isAuthenticated: state.auth.token !== null
   };
 };
 
