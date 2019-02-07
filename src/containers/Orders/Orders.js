@@ -22,6 +22,9 @@ class Orders extends Component {
           price={order.price}
         />
       ))}
+    if (!this.props.loading && this.props.orders === []) {
+      orders = <h1>You have not yet placed any orders.</h1>
+    }
     return (
       <div>
         {orders}
