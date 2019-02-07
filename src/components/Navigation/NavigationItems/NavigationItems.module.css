@@ -13,3 +13,9 @@
         flex-flow: row;
     }
 }
+
+@media (max-width: 499px) {
+    .NavigationItems {
+        display: inline;
+    }
+}

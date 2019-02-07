@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BuildControls.module.css";
 import BuildControl from "./BuildControl/BuildControl";
 
+
 const controls = [
   { label: "Salad", type: "salad" },
   { label: "Cheese", type: "cheese" },
@@ -28,7 +29,7 @@ const buildControls = props => (
       className={styles.OrderButton}
       disabled={!props.purchaseable}
     >
-      ORDER NOW
+      {props.auth ? 'ORDER NOW' : 'SIGN IN TO ORDER'}
     </button>
   </div>
 );
